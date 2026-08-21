@@ -1494,3 +1494,21 @@ button {
     }
 
 }
+
+
+@media (max-width: 768px) {
+    /* último código que ya tenías */
+}
+
+/* =========================================
+   AJUSTES RESPONSIVE ADICIONALES - CGM
+========================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* aquí continúa todo el nuevo código */

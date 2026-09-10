@@ -1442,15 +1442,16 @@ button {
 
     .project-image {
         height: auto;
-        min-height: 0;
-        overflow: hidden;
+        overflow: visible;
+        background: transparent;
 }
 
 .project-image img {
     width: 100%;
     height: auto;
-    object-fit: contain;
-    }
+    display: block;
+    object-fit: initial;
+}
 
 
     .carousel-button {

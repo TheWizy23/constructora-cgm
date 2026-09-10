@@ -1594,3 +1594,33 @@ body {
     }
 
 }
+/* =========================================
+   PROYECTOS - CELULAR
+   MOSTRAR FOTOGRAFIA EN SU PROPORCION REAL
+========================================= */
+
+@media (max-width: 700px) {
+
+    .project-image {
+        width: 100%;
+        height: auto !important;
+        min-height: 0 !important;
+        aspect-ratio: unset !important;
+        overflow: visible !important;
+    }
+
+    .project-image img {
+        display: block;
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100%;
+        max-height: none !important;
+        object-fit: unset !important;
+        object-position: center;
+    }
+
+    .project-card {
+        height: auto !important;
+    }
+
+}

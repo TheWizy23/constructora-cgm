@@ -1540,3 +1540,27 @@ body {
     }
 
 }
+/* =========================================
+   FOTOGRAFIAS DE PROYECTOS EN CELULAR
+========================================= */
+
+@media (max-width: 700px) {
+
+    .project-image {
+        height: auto !important;
+        min-height: 0 !important;
+        aspect-ratio: auto !important;
+        overflow: visible !important;
+        background: transparent !important;
+    }
+
+    .project-image img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: contain !important;
+        object-position: center !important;
+        display: block;
+    }
+
+}

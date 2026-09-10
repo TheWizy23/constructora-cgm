@@ -432,11 +432,11 @@ button {
 
 
 .hero h1 {
-
-    font-size: clamp(
-        65px,
-        10vw,
-        150px
+    font-size: clamp(42px, 13vw, 72px);
+    letter-spacing: -3px;
+    line-height: 0.95;
+    max-width: 100%;
+    overflow-wrap: normal;
     );
 
     font-weight: 500;
@@ -877,9 +877,7 @@ button {
 
 
 .about-image img {
-
     height: 650px;
-
     object-fit: cover;
 }
 
@@ -1422,8 +1420,11 @@ button {
 
 
     .hero h1 {
-
-        letter-spacing: -4px;
+        font-size: clamp(42px, 13vw, 72px);
+        letter-spacing: -3px;
+        line-height: 0.95;
+        max-width: 100%;
+        overflow-wrap: normal;
     }
 
 
@@ -1440,8 +1441,15 @@ button {
 
 
     .project-image {
+        height: auto;
+        min-height: 0;
+        overflow: hidden;
+}
 
-        height: 400px;
+.project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     }
 
 
@@ -1492,6 +1500,12 @@ button {
 
         align-items: center;
     }
+   
+   .about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 
 }
 
@@ -1512,3 +1526,16 @@ body {
 }
 
 /* aquí continúa todo el nuevo código */
+/* =========================================
+   AJUSTE PARA TELEFONOS MUY PEQUEÑOS
+========================================= */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 40px;
+        letter-spacing: -2px;
+        line-height: 0.95;
+    }
+
+}
